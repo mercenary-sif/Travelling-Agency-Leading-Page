@@ -1,0 +1,6 @@
+export {default as Header} from './Header'
+export {default as Categories} from './Categories'
+export {default as TopSelling} from './TopSelling'
+export {default as BookTrip} from './BookTrip'
+export {default as Reviews} from './Reviews'
+export {default as ContactUs} from './ContactUs'

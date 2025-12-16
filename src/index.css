@@ -1,13 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Fonts */
+  --font-1:"Poppins", sans-serif;
+  --font-2: "Volkhov", serif;
+  --font-3:  "Google Sans", sans-serif;
+  --font-4: "Lateef", serif;
+  --font-5:  "Amiri", serif;
+  --font-6:  "Scheherazade New", serif;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  font-family: var(--font-1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes swing {
+  0%   { transform: translateX(0)    rotate(0deg); }
+  25%  { transform: translateX(-12px) rotate(195deg); } /* move left & rotate clockwise */
+  50%  { transform: translateX(0)    rotate(0deg); }
+  75%  { transform: translateX(12px)  rotate(-195deg); } /* move right & rotate counter-clockwise */
+  100% { transform: translateX(0)    rotate(0deg); }
 }
+
+/* run the animation while parent .group is hovered */
+.group:hover .hover-anim {
+  animation: swing 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes icon-swing {
+  0%   { transform: translateX(0)    rotate(0deg); }
+  25%  { transform: translateX(-14px) rotate(5deg); } /* move left & rotate clockwise */
+  50%  { transform: translateX(0)    rotate(0deg); }
+  75%  { transform: translateX(14px)  rotate(-5deg); } /* move right & rotate counter-clockwise */
+  100% { transform: translateX(0)    rotate(0deg); }
+}
+
+/* run only while parent .group is hovered */
+.group:hover .hover-animation {
+  animation: icon-swing 4s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes text-swing {
+  0%   { transform: translateX(0)    rotate(0deg); }
+  25%  { transform: translateX(-22px) rotate(10deg); } /* move left & rotate clockwise */
+  50%  { transform: translateX(0)    rotate(0deg); }
+  75%  { transform: translateX(40px)  rotate(-10deg); } /* move right & rotate counter-clockwise */
+  100% { transform: translateX(0)    rotate(0deg); }
+}
+
+.hover-text_animation {
+  animation: text-swing  4s ease-in-out infinite;
+  transform-origin: center;
+}
+

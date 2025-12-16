@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Travelling-Agency-Leading-Page , A modern and responsive landing page for a travel agency, developed using React JS and Tailwind CSS for optimal responsiveness.
+
+I also use i18n library for the translations between English and Arabic , it's a great and easy to use library , this is actually my second time using it. 
+
+finally for animation i use 'framer motion' it's a very helpful library for simple, smooth animations, like the ones I implemented in this amazing landing page.

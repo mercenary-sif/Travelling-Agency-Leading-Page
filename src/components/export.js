@@ -1,0 +1,7 @@
+export {default as Navbar} from './NavBar'
+export {default as SectionHeader} from './SectionHead'
+export {default as Card} from './Card'
+export {default as Destination} from './Destination'
+export {default as Review} from './Review'
+export {default as Brand} from './Brands'
+export {default as Footer} from './Footer'
